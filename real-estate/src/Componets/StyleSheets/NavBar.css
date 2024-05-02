@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #343a40;
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important; 
+   
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.navbar-brand h1{
+    font-size: 30px ;
+    margin: 0;
+}
+
+.navbar-brand, .nav-link p{
+    font-size: 20px ;
+    margin: 0;
+}
