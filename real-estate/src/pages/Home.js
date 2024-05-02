@@ -25,7 +25,6 @@ const Home = () => {
   const [minPrice, setMinPrice] = useState('');
   const [maxPrice, setMaxPrice] = useState('');
 
-
   const manualPropertyData = [
     {
       id: 1,
@@ -157,6 +156,8 @@ const Home = () => {
     },
   ];
 
+
+
   useEffect(() => {
     setProperties(manualPropertyData);
     setFilteredProperties(manualPropertyData);
@@ -183,8 +184,6 @@ const Home = () => {
     setMaxPrice(event.target.value);
   };
 
-
-
   return (
     <div className="home-container">
       <h1 className="title">Available Properties</h1>
@@ -196,27 +195,21 @@ const Home = () => {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 px-2">
         {filteredProperties.map(property => (
           <div key={property.id} className="col-3">
-            <div className="card property-card"style={{ backgroundColor: '#343a40', color: 'white' }}>         
+            <div className="card property-card" style={{ backgroundColor: '#343a40', color: 'white' }}>
               <img src={property.image} alt={property.name} className="card-img-top property-image" />
               <div className="card-body property-details">
                 <h5 className="card-title property-name">{property.name}</h5>
                 <p className="card-text property-location">{property.location}</p>
                 <p className="card-text property-location">Bedrooms: {property.bed}</p>
                 <p className="card-text property-price">R{property.price}</p>
-                <div className='btn-1'>
-                  <Link as={Link} to="/PropertyDetail"><p>Details</p></Link>
-                  </div>
+                <Link to="/PropertyDetail" className='btn-1'><p>Details</p></Link>
               </div>
             </div>
           </div>
         ))}
-   
-</div>
+      </div>
     </div>
-    
   );
-  
 };
 
 export default Home;
-

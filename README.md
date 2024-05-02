@@ -10,7 +10,7 @@
 * [Contributing](#contributing)
 * [Authors](#authors)
 * [License](#license)
-* [Vlog](#vlog)
+* [Demonstration](#demonstration)
 
 ## About The Project
 
@@ -64,5 +64,5 @@ Contributions are what make the open source community such an amazing place to b
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
-## Demo Recording 
-
+## Demonstration 
+**Demonstration Video** - [Google Drive Link](https://github.com/ZanderBez)

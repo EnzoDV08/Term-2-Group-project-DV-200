@@ -1,3 +1,11 @@
+.PageContainerAddProperty{
+  padding: 10px 0;
+}
+
+.PageContainerAddProperty h1{
+  margin-left: 20vh;
+}
+
 .property-form {
     max-width: 80%;
     margin: 0 auto;
@@ -44,5 +52,7 @@
     background-color: #0056b3;
   }
   
-
+.PageContainerAddProperty{
+  height: 75vh;
+}
   

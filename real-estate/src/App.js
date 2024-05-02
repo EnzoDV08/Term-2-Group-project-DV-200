@@ -13,18 +13,18 @@ function App() {
   return (
     <Router>
       <div className='PageLayout'>
-      <div className="content-wrapper">
-        <NavBar />
-        <Api />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/PropertyDetail" element={<PropertyDetail />} />
-          <Route path="/AddPropertyPage" element={<AddPropertyPage />} />
-        </Routes>
-      </div>
-      <div className="footer-wrapper">
-        <Footer />
-      </div>
+        <div className="content-wrapper">
+          <NavBar />
+          <Api />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/PropertyDetail" element={<PropertyDetail />} />
+            <Route path="/AddPropertyPage" element={<AddPropertyPage />} />
+          </Routes>
+        </div>
+        <div className="footer-wrapper">
+          <Footer />
+        </div>
       </div>
     </Router>
   );

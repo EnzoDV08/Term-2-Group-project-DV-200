@@ -11,7 +11,10 @@
 }
 
 .nav-link:hover {
-    color: #ffc107 !important;
+    color: rgb(78, 78, 215)!important;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .nav-link + .nav-link {

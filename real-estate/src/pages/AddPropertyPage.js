@@ -34,7 +34,7 @@ const AddPropertyPage = () => {
   };
 
   return (
-    <div>
+    <div className='PageContainerAddProperty'>
       <h1>Add Property</h1>
       <form onSubmit={handleSubmit} className="property-form">
         <div className="form-row">
