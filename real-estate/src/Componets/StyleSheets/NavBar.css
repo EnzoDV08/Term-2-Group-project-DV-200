@@ -1,7 +1,6 @@
 .navbar {
     background-color: #343a40;
     color: white;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,11 +8,14 @@
 
 .navbar-brand, .nav-link {
     color: white !important; 
-   
 }
 
 .nav-link:hover {
     color: #ffc107 !important;
+}
+
+.nav-link + .nav-link {
+    margin-left: 20px; 
 }
 
 .navbar-brand h1{
@@ -24,4 +26,8 @@
 .navbar-brand, .nav-link p{
     font-size: 20px ;
     margin: 0;
+}
+
+.navbar-toggler-icon svg {
+    fill: white;
 }

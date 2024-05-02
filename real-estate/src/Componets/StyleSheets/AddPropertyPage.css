@@ -1,20 +1,18 @@
-.add-property-container {
-    max-width: 800px;
+.property-form {
+    max-width: 80%;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .add-property-form {
+  .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 15px;
   }
   
-  .form-group {
-    margin-bottom: 20px;
+  .form-row > div {
+    display: flex;
+    flex-direction: column;
   }
   
   label {
@@ -24,30 +22,25 @@
   input[type="text"],
   input[type="number"],
   textarea {
-    width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    margin-top: 5px;
   }
   
   textarea {
-    resize: vertical;
+    height: 100px;
   }
   
-  .submit-button {
-    grid-column: span 2; /* Make the button span across both columns */
+  button {
     padding: 10px 20px;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
   }
   
-  .submit-button:hover {
+  button:hover {
     background-color: #0056b3;
   }
   

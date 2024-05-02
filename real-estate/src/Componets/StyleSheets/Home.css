@@ -1,52 +1,79 @@
 .home-container {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
   }
   
-  .title {
+.title {
     font-size: 24px;
+    margin-bottom: 20px; 
+  }
+  
+.search-bar {
     margin-bottom: 20px;
+    display: flex; /* Use flexbox */
   }
   
-  .search-bar input {
+.search-bar input {
+    padding: 10px;
     margin-right: 10px;
-    padding: 8px;
-    border-radius: 5px;
     border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
-  .properties-container {
+.search-bar input:last-child {
+    margin-right: 0; /* Remove right margin for the last input */
+  }
+.properties-container {
     display: grid;
-    grid-template-columns: repeat(4, 2fr); /* Each column takes up 2 times the available space */
-    grid-template-rows: repeat(10, auto); /* 10 rows */
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 30px; 
   }
   
-  .property {
+.property {
+    width: 300px; /* Set a specific width for the property card */
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    height: 400px; /* Set a specific height for the property card */
   }
   
-  .property-image {
+.property-image {
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    height: 60%; /* Set the height of the image within the property card */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover; /* Ensure the image fills the container without distortion */
   }
   
-  .property-details {
-    padding: 10px;
+.property-details {
+    padding: 20px;
+    height: 40%; /* Set the height of the property details within the card */
   }
   
-  .property-name {
-    font-size: 18px;
-    margin-bottom: 5px;
+.property-name {
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   
-  .property-location,
-  .property-price {
-    font-size: 14px;
-    margin-bottom: 5px;
+.property-location,
+.property-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .btn-1{
+    background-color: rgb(78, 78, 215);
+    width: 100px;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .btn-1 p{
+    margin: 0;
+    color: white;
   }
   
